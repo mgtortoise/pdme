@@ -1,0 +1,11 @@
+[Unit]
+Description=<description about this service>
+
+[Service]
+User=root
+WorkingDirectory=/etc/systemd/system/
+ExecStart=python main.py 80
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
